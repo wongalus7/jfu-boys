@@ -1,11 +1,10 @@
 # JFU-Boys
 
-**JFU-Boys Mass JFU Scanner + Auto Upload** adalah alat untuk memindai situs web yang rentan terhadap kerentanan **jQuery File Upload (JFU)** dan secara otomatis mengunggah file PHP jika kerentanan ditemukan.
+**JFU-Boys Mass JFU Scanner** adalah alat untuk memindai situs web yang rentan terhadap kerentanan **jQuery File Upload (JFU)** dan secara otomatis mengunggah file PHP jika kerentanan ditemukan.
 
 ## Fitur
 - Memindai banyak situs web secara bersamaan.
 - Mendeteksi kerentanan JFU.
-- Mengunggah file PHP secara otomatis jika situs web rentan.
 - Auto save result.
 
 ## Requirements
